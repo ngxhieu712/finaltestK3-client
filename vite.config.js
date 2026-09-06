@@ -5,8 +5,8 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/teacher': 'http://localhost:8080',
-      '/teacher-position': 'http://localhost:8080',
+      '/teacher': 'https://finaltestk3-server.onrender.com',
+      '/teacher-position': 'https://finaltestk3-server.onrender.com',
       // nếu sau này thêm API khác, thêm dòng tương ứng ở đây
     },
   },
