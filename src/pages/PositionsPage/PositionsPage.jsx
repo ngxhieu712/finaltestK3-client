@@ -3,6 +3,9 @@ import PositionForm from "../../components/PositionForm/PositionForm";
 import StatusBadge from "../../components/StatusBadge/StatusBadge";
 import styles from "./PositionsPage.module.css";
 
+const API_URL = import.meta.env.VITE_API_URL || "";
+const BASE_URL = `${API_URL}/teacher-position`;
+
 // Map document từ server (_id, des, isActive) sang shape mà UI đang dùng
 function toUiPosition(doc) {
   return {
@@ -23,7 +26,7 @@ function PositionsPage() {
 
   // Hàm fetch thuần, KHÔNG setState trước await -> gọi trong effect vẫn an toàn
   async function fetchPositions() {
-    const res = await fetch("/teacher-position");
+    const res = await fetch(BASE_URL);
     if (!res.ok) throw new Error(`Lỗi server: ${res.status}`);
     const data = await res.json();
     return data.map(toUiPosition);
