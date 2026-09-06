@@ -1,4 +1,5 @@
-const BASE_URL = "/teacher-position";
+const API_URL = import.meta.env.VITE_API_URL || "";
+const BASE_URL = `${API_URL}/teacher-position`;
 
 async function parseErrorMessage(res) {
   try {

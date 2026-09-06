@@ -1,4 +1,5 @@
-const BASE_URL = "/teacher";
+const API_URL = import.meta.env.VITE_API_URL || "";
+const BASE_URL = `${API_URL}/teacher`;
 
 // Đọc message lỗi từ backend nếu có (vd: { message: "..." }), fallback về status code
 async function parseErrorMessage(res) {
