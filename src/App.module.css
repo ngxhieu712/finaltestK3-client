@@ -1,0 +1,8 @@
+.appShell { min-height: 100vh; background: #fff; color: #25252d; }
+.topbar { height: 62px; padding: 0 38px; display: flex; align-items: center; gap: 44px; border-bottom: 1px solid #f0eff4; background: #fff; }
+.brand { display: flex; align-items: center; gap: 9px; font-size: 14px; font-weight: 700; white-space: nowrap; }
+.brandMark { display: grid; place-items: center; height: 25px; width: 25px; border-radius: 7px; color: #fff; background: linear-gradient(135deg, #6855f7, #8d7dfc); font-size: 13px; }
+.navigation { display: flex; align-self: stretch; gap: 7px; }
+.navigation button { padding: 0 13px; border: 0; border-bottom: 2px solid transparent; background: transparent; color: #74717f; font: inherit; font-size: 13px; cursor: pointer; }
+.navigation button:hover, .navigation .activeNav { color: #5142d9; border-bottom-color: #6555ee; font-weight: 600; }
+@media (max-width: 650px) { .topbar { padding: 0 18px; gap: 18px; } .brand { font-size: 12px; } .navigation button { padding: 0 7px; font-size: 12px; } }

@@ -1,0 +1,15 @@
+.personal { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 28px; }
+.avatarPicker { display: flex; align-items: flex-start; gap: 12px; padding-top: 19px; cursor: pointer; }
+.avatarPicker input { display: none; }
+.avatarPicker img, .avatarFallback { width: 138px; height: 171px; border-radius: 18px 18px 12px 12px; object-fit: cover; background: linear-gradient(155deg, #ffe0c1 37%, #34486b 38%); }
+.avatarFallback { display: grid; place-items: center; color: #fff; font-size: 38px; font-weight: 750; box-shadow: inset 0 -58px 0 #2d405f; }
+.uploadBox { width: 103px; height: 113px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px dashed #b9c0d0; color: #8490a2; font-size: 25px; }
+.uploadBox small { margin-top: 4px; font-size: 10px; font-weight: 600; }.uploadBox strong { font-size: 12px; font-weight: 500; }
+.personalFields .titleRow { margin-top: 0; }.formGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 12px; }
+.positionLabel { display: flex; gap: 10px; align-items: end; }.positionLabel label { flex: 1; }.positionLabel button { height: 32px; border: 0; background: transparent; color: #6354e7; font-size: 12px; cursor: pointer; white-space: nowrap; }
+.smallButton, .saveButton { border: 1px solid #dfdee5; border-radius: 5px; background: #fff; color: #403e47; cursor: pointer; font-size: 12px; font-weight: 600; box-shadow: 0 1px 2px rgba(0,0,0,.04); }.smallButton { padding: 5px 10px; }.smallButton:hover, .saveButton:hover { border-color: #9287ee; color: #5847d9; }
+.educationTable { border: 1px solid #f1f0f5; border-radius: 7px; overflow: hidden; }.educationHead, .educationRow { display: grid; grid-template-columns: 1fr 1.25fr 1.2fr .9fr 1.1fr 27px; align-items: center; gap: 8px; }.educationHead { min-height: 34px; padding: 0 9px; background: #f2efff; color: #4b4952; font-size: 12px; font-weight: 650; }.educationHead span:last-child { grid-column: 5 / span 2; }
+.educationRow { padding: 7px 9px; border-top: 1px solid #f0eef4; }.educationRow input, .educationRow select { min-width: 0; height: 30px; padding: 4px 6px; border: 1px solid #e4e2e8; border-radius: 4px; font-size: 12px; }.educationRow button { height: 25px; border: 0; border-radius: 4px; color: #a29eaa; background: transparent; cursor: pointer; font-size: 19px; }
+.empty { display: flex; min-height: 120px; align-items: center; justify-content: center; flex-direction: column; color: #c3c1c9; font-size: 31px; }.empty span { margin-top: 4px; font-size: 12px; }
+.footer { display: flex; justify-content: flex-end; padding-top: 26px; margin-top: 28px; border-top: 1px solid #eeedf2; }.saveButton { padding: 7px 13px; font-size: 13px; }
+@media (max-width: 720px) { .personal { grid-template-columns: 1fr; gap: 7px; }.avatarPicker { padding: 0; }.formGrid { grid-template-columns: 1fr; }.educationTable { overflow-x: auto; }.educationHead, .educationRow { min-width: 690px; }.positionLabel { align-items: center; } }

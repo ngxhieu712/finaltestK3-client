@@ -1,0 +1,6 @@
+.field { display: flex; flex-direction: column; gap: 7px; color: #3d3b45; font-size: 13px; font-weight: 500; }
+.field span b { margin-right: 4px; color: #ff5c5c; font-size: 15px; }
+.field input, .field textarea, .field select { width: 100%; min-height: 36px; padding: 7px 10px; outline: none; border: 1px solid #e3e2e7; border-radius: 5px; color: #302e37; background: #fff; font-size: 13px; transition: border-color .16s, box-shadow .16s; }
+.field textarea { min-height: 72px; resize: vertical; }
+.field input::placeholder, .field textarea::placeholder { color: #b8b6bf; }
+.field input:focus, .field textarea:focus, .field select:focus { border-color: #8174f2; box-shadow: 0 0 0 3px rgba(113, 99, 239, .1); }

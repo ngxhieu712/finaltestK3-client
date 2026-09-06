@@ -1,0 +1,4 @@
+.titleRow { display: flex; align-items: center; gap: 14px; margin: 28px 0 16px; }
+.line { width: 50px; height: 1px; background: #8174f2; }
+.growLine { flex: 1; height: 1px; background: #b6aff9; }
+.titleRow h3 { flex: none; margin: 0; color: #36333e; font-size: 14px; font-weight: 650; }

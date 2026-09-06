@@ -1,0 +1,9 @@
+.backdrop { position: fixed; z-index: 20; inset: 0; background: rgba(24, 22, 39, .18); display: flex; justify-content: flex-end; }
+.panel { width: min(580px, 100vw); min-height: 100vh; overflow-y: auto; background: #fff; box-shadow: -14px 0 42px rgba(30, 24, 68, .12); animation: enter .22s ease-out; }
+.wide { width: min(1180px, 100vw); }
+.header { height: 62px; display: flex; align-items: center; gap: 12px; padding: 0 28px; border-bottom: 1px solid #eeeef2; }
+.header h2 { margin: 0; font-size: 17px; line-height: 1; }
+.close { width: 27px; height: 27px; display: grid; place-items: center; padding: 0; border: 0; background: transparent; color: #92909a; cursor: pointer; font-size: 31px; font-weight: 200; line-height: 1; }
+.content { padding: 26px 28px 34px; }
+@keyframes enter { from { transform: translateX(34px); opacity: .55; } to { transform: translateX(0); opacity: 1; } }
+@media (max-width: 650px) { .content { padding: 22px 18px 30px; } .header { padding: 0 18px; } }
